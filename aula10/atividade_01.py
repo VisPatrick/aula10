@@ -4,7 +4,7 @@
 # função soma
 import os
 os.system('cls')
-
+import random
 
 
 def soma(n1, n2):
@@ -25,8 +25,9 @@ def multiplicacao(n1, n2):
 def divisao(n1, n2):
     return n1/n2
 
-num1 = float(input('\nDigite o primeiro número: '))
-num2 = float(input('Digite o segundo número: '))
+
+num1 = random.randint(1, 100)
+num2 = random.randint(1, 100)
 print(30*"=")
 
 somar = soma(num1, num2)
