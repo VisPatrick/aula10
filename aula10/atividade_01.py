@@ -25,9 +25,10 @@ def multiplicacao(n1, n2):
 def divisao(n1, n2):
     return n1/n2
 
-usuario_escolhe  = input('\nEscolha uma operação: ')
-num1 = int(input('\nDigite o primeiro número: '))
-num2 = int(input("Digite o segundo número: "))
+num1 = random.randint(1, 157)
+num2 = random.randint(1, 157)
+print(f"Os números gerados foram: {num1} e {num2}")
+usuario_escolhe = input('\nEscolha uma operação (soma, subtracao, multiplicacao, divisao): ')
 
 match usuario_escolhe:
     case "soma":
