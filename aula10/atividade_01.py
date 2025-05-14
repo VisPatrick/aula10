@@ -25,19 +25,28 @@ def multiplicacao(n1, n2):
 def divisao(n1, n2):
     return n1/n2
 
+usuario_escolhe  = input('\nEscolha uma operação: ')
+num1 = int(input('\nDigite o primeiro número: '))
+num2 = int(input("Digite o segundo número: "))
 
-num1 = random.randint(1, 100)
-num2 = random.randint(1, 100)
-print(30*"=")
+match usuario_escolhe:
+    case "soma":
+        print(f"Soma: {soma(num1, num2)}")
+    case "subtracao":
+        print(f"Subtração: {subtracao(num1, num2)}")
+    case "multiplicacao":
+        print(f"Multiplicação: {multiplicacao(num1, num2)}")
+    case "divisao":
+        print(f"Divisão: {divisao(num1, num2)}")
 
-somar = soma(num1, num2)
-print(f"Soma: {somar}")
+# somar = soma(num1, num2)
+# print(f"Soma: {somar}")
 
-sub = subtracao(num1, num2)
-print(f"Subtração: {sub}")
+# sub = subtracao(num1, num2)
+# print(f"Subtração: {sub}")
 
-mult = multiplicacao(num1, num2)
-print(f"Multiflicação: {mult}")
+# mult = multiplicacao(num1, num2)
+# print(f"Multiflicação: {mult}")
 
-div = divisao(num1, num2)
-print(f"Divisão: {div}")
+# div = divisao(num1, num2)
+# print(f"Divisão: {div}")
